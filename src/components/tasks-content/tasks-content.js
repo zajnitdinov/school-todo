@@ -1,20 +1,41 @@
-import React from 'react';
+import React, {Component} from 'react';
 import TasksListItem from "../tasks-list-item/tasks-list-item";
 import {Typography} from "antd";
 import {connect} from "react-redux";
 import WeekListTasks from "../week-list-tasks/week-list-tasks";
+import compose from "../../utils/compose";
+import withService from "../hoc/with-service";
+import {fetchItems} from "../../actions";
 
 const {Title} = Typography;
 
-const TasksContent = ({label}) => {
-    return (
-        <React.Fragment>
-            <Title>{label}</Title>
-            <TasksListItem />
-            <WeekListTasks/>
-        </React.Fragment>
-    );
-};
+class TasksContent extends Component {
+    componentDidMount() {
+        this.props.fetchItems();
+    }
+
+    renderContent = () => {
+        switch (this.props.label) {
+            case 'Сегодня':
+                return <TasksListItem />;
+            case 'Неделя':
+                return <WeekListTasks />;
+            default:
+                return <TasksListItem />;
+        }
+    };
+
+    render() {
+        const {label} = this.props;
+        return (
+            <React.Fragment>
+                <Title>{label}</Title>
+                {this.renderContent()}
+            </React.Fragment>
+        );
+    }
+
+}
 
 const mapStateToProps = ({content}) => {
     return {
@@ -22,4 +43,13 @@ const mapStateToProps = ({content}) => {
     }
 };
 
-export default connect(mapStateToProps)(TasksContent);
+const mapDispatchToProps = (dispatch, {service}) => {
+    return {
+        fetchItems: fetchItems(service, dispatch)
+    }
+};
+
+export default compose(
+    withService(),
+    connect(mapStateToProps, mapDispatchToProps)
+)(TasksContent);

@@ -3,18 +3,12 @@ import {List} from "antd";
 import {connect} from "react-redux";
 
 import Item from "../list-item";
-import withService from "../hoc/with-service";
-import {fetchItems} from "../../actions";
-import compose from "../../utils/compose";
 
 const style = {
     margin: '10px'
 };
 
 class TasksListItem extends Component {
-    componentDidMount() {
-        this.props.fetchItems();
-    }
 
     render() {
         return (
@@ -41,13 +35,6 @@ const mapStateToProps = ({items : {data, loading}}) => {
     }
 };
 
-const mapDispatchToProps = (dispatch, {service}) => {
-    return {
-        fetchItems: fetchItems(service, dispatch)
-    }
-};
 
-export default compose(
-    withService(),
-    connect(mapStateToProps, mapDispatchToProps)
-)(TasksListItem);
+
+export default connect(mapStateToProps)(TasksListItem);

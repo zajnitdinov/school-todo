@@ -38,4 +38,4 @@ const fetchItems = (service, dispatch) => () => {
         .then(data => dispatch(itemsLoaded(data)));
 };
 
-export { editLabel, siderInfo, fetchItems, toggleDoneItem };
+export {fetchItems, toggleDoneItem, siderInfo, editLabel};
