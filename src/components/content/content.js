@@ -1,16 +1,16 @@
 import React, {Component} from 'react';
-import TasksListItem from "../tasks-list-item/tasks-list-item";
+import TasksListItem from "../task-list-item/task-list-item";
 import {Typography} from "antd";
 import {connect} from "react-redux";
-import WeekListTasks from "../week-list-tasks/week-list-tasks";
+import WeekListTasks from "../week-task-list/week-task-list";
 import compose from "../../utils/compose";
 import withService from "../hoc/with-service";
 import {fetchItems} from "../../actions";
-import MonthListTasks from "../month-list-tasks";
+import MonthListTasks from "../month-task-list";
 
 const {Title} = Typography;
 
-class TasksContent extends Component {
+class Content extends Component {
     componentDidMount() {
         this.props.fetchItems();
     }
@@ -61,4 +61,4 @@ const mapDispatchToProps = (dispatch, {service}) => {
 export default compose(
     withService(),
     connect(mapStateToProps, mapDispatchToProps)
-)(TasksContent);
+)(Content);

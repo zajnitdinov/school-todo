@@ -5,9 +5,9 @@ import "antd/dist/antd.css";
 
 import LeftMenu from "../menu";
 import Info from "../info";
-import TasksContent from "../tasks-content";
+import TasksContent from "../content";
 
-const {Sider, Content} = Layout;
+const {Sider, Content: AntContent} = Layout;
 
 const App = () => {
     return(
@@ -15,9 +15,9 @@ const App = () => {
             <Sider theme='light'>
                 <LeftMenu/>
             </Sider>
-            <Content className='spinner'>
+            <AntContent className='spinner'>
                 <TasksContent/>
-            </Content>
+            </AntContent>
             <Info/>
         </Layout>
     )

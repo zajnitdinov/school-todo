@@ -2,14 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73982d7f-5e3e-4014-bf59-b5e14e579ef3" name="Default Changelist" comment=".">
-      <change afterPath="$PROJECT_DIR$/src/components/month-list-tasks/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/month-list-tasks/month-list-tasks.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/content/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/hoc/with-data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/task-list/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/week-task-list-item/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/week-task-list-item/week-task-list-item.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/list-item/list-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/list-item/list-item.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/tasks-content/tasks-content.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/tasks-content/tasks-content.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/tasks-list-item/tasks-list-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/tasks-list-item/tasks-list-item.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/week-list-tasks/week-list-tasks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/week-list-tasks/week-list-tasks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/content.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/content.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/hoc/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hoc/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/list-item/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/list-item/list-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/task-list/task-list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/month-list-tasks/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/month-task-list/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/month-list-tasks/month-list-tasks.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/month-task-list/month-task-list.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/month-list-tasks/month-list-tasks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/month-task-list/month-task-list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/tasks-content/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/tasks-content/tasks-content.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/content/content.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/tasks-list-item/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/task-list-item/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/tasks-list-item/tasks-list-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/task-list-item/task-list-item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/week-list-tasks/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/week-task-list/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/week-list-tasks/week-list-tasks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/week-task-list/week-task-list.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
