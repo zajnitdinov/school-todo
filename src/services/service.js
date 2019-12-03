@@ -19,7 +19,7 @@ export default class Service {
             title: 'Item #3',
             checked: false,
             description: 'information #3',
-            date: new Date('December 1, 2019 03:24:00')
+            date: new Date('December 4, 2019 03:24:00')
         }
     ];
 

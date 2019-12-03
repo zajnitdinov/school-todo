@@ -15,6 +15,12 @@ class TasksContent extends Component {
         this.props.fetchItems();
     }
 
+    componentDidUpdate(prevProps) {
+        if (this.props.label !== prevProps.label){
+            this.props.fetchItems();
+        }
+    }
+
     renderContent = () => {
         switch (this.props.label) {
             case 'Сегодня':
@@ -22,7 +28,7 @@ class TasksContent extends Component {
             case 'Неделя':
                 return <WeekListTasks />;
             case 'Месяц':
-                return <MonthListTasks/>
+                return <MonthListTasks/>;
             default:
                 return <TasksListItem />;
         }

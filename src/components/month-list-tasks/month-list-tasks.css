@@ -1,0 +1,9 @@
+.ant-radio-group, .ant-radio-group-outline, .ant-radio-group-default {
+    display: none;
+}
+
+.events {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}

@@ -9,19 +9,33 @@ const style = {
 };
 
 class TasksListItem extends Component {
-    state = {
-        data: []
+    getItemsByDate = () => {
+        const {data, label} = this.props;
+        const now = new Date();
+        const equalDate = (item, now) => (
+            item.date.getDate() === now.getDate() &&
+            item.date.getMonth() === now.getMonth() &&
+            item.date.getFullYear() === now.getFullYear()
+        );
+        switch (label) {
+            case 'Сегодня':
+                return data.filter(item => equalDate(item, now));
+            case 'Завтра':
+                now.setDate(now.getDate() + 1);
+                return data.filter(item => equalDate(item, now));
+            default:
+                return data;
+        }
     };
-
     render() {
-        const {loading, data} = this.props;
+        const {loading} = this.props;
         return (
             <List
                 bordered='true'
                 size='large'
                 style={style}
                 loading={loading}
-                dataSource={data}
+                dataSource={this.getItemsByDate()}
                 renderItem=
                     {(item) => <Item {...item}/>}
             >

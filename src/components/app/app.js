@@ -15,7 +15,7 @@ const App = () => {
             <Sider theme='light'>
                 <LeftMenu/>
             </Sider>
-            <Content>
+            <Content className='spinner'>
                 <TasksContent/>
             </Content>
             <Info/>
