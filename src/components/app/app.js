@@ -3,7 +3,7 @@ import {Layout} from "antd";
 import {connect} from "react-redux";
 import "antd/dist/antd.css";
 
-import LeftMenu from "../left-menu";
+import LeftMenu from "../menu";
 import Info from "../info";
 import TasksContent from "../tasks-content";
 

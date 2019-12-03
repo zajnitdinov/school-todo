@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73982d7f-5e3e-4014-bf59-b5e14e579ef3" name="Default Changelist" comment=".">
-      <change afterPath="$PROJECT_DIR$/src/components/month-list-tasks/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/month-list-tasks/month-list-tasks.js" afterDir="false" />
+    <list default="true" id="73982d7f-5e3e-4014-bf59-b5e14e579ef3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/list-item/list-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/list-item/list-item.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/tasks-content/tasks-content.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/tasks-content/tasks-content.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/tasks-list-item/tasks-list-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/tasks-list-item/tasks-list-item.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/week-list-tasks/week-list-tasks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/week-list-tasks/week-list-tasks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/content.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/content.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/left-menu/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/left-menu/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/left-menu/left-menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/left-menu/menu.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +71,16 @@
       <workItem from="1575212670222" duration="11929000" />
       <workItem from="1575274989336" duration="392000" />
       <workItem from="1575314335616" duration="1858000" />
+      <workItem from="1575370023670" duration="734000" />
     </task>
+    <task id="LOCAL-00001" summary=".">
+      <created>1575370060118</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1575370060118</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
