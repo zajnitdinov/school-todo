@@ -45,7 +45,7 @@ const WeekListTasks = ({data, loading}) => {
                       loading={loading}
                       dataSource={item.items}
                       renderItem=
-                          {(item) => <Item id={item.id} checked={item.checked}>{item.title}</Item>}
+                          {(item) => <Item {...item}/>}
                 />
             )
         })

@@ -6,6 +6,7 @@ import WeekListTasks from "../week-list-tasks/week-list-tasks";
 import compose from "../../utils/compose";
 import withService from "../hoc/with-service";
 import {fetchItems} from "../../actions";
+import MonthListTasks from "../month-list-tasks";
 
 const {Title} = Typography;
 
@@ -20,6 +21,8 @@ class TasksContent extends Component {
                 return <TasksListItem />;
             case 'Неделя':
                 return <WeekListTasks />;
+            case 'Месяц':
+                return <MonthListTasks/>
             default:
                 return <TasksListItem />;
         }

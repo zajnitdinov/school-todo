@@ -1,7 +1,7 @@
 const content = (state, action) => {
     if (state === undefined) {
         return {
-            label: ''
+            label: 'Сегодня'
         }
     }
 

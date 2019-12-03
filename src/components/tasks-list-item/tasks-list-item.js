@@ -9,29 +9,30 @@ const style = {
 };
 
 class TasksListItem extends Component {
+    state = {
+        data: []
+    };
 
     render() {
+        const {loading, data} = this.props;
         return (
-            <div>
-                <List
-                    bordered='true'
-                    size='large'
-                    style={style}
-                    loading={this.props.loading}
-                    dataSource={this.props.data}
-                    renderItem=
-                        {(item) => <Item id={item.id} checked={item.checked}>{item.title}</Item>}
-                >
-                </List>
-            </div>
+            <List
+                bordered='true'
+                size='large'
+                style={style}
+                loading={loading}
+                dataSource={data}
+                renderItem=
+                    {(item) => <Item {...item}/>}
+            >
+            </List>
         );
     }
 }
 
-const mapStateToProps = ({items : {data, loading}}) => {
+const mapStateToProps = ({items : {data, loading}, content: {label}}) => {
     return {
-        data: data,
-        loading: loading
+        label, data, loading
     }
 };
 
