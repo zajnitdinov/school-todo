@@ -9,13 +9,15 @@ class ListItem extends Component {
         width: '100%',
         marginLeft: '10px'
     };
+
     render() {
+        const {checked, toggleDone, openInfo, id, title} = this.props;
         return (
             <List.Item>
-                <Checkbox checked={this.props.checked} onClick={() => this.props.toggleDone(this.props.id)}/>
+                <Checkbox checked={checked} onClick={() => toggleDone(id)}/>
                 <span style={this.style}
-                      onClick={() => this.props.openInfo(this.props.id)}>
-                    {this.props.children}
+                      onClick={() => openInfo(id)}>
+                    {title}
                 </span>
             </List.Item>
         );
