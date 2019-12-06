@@ -2,13 +2,13 @@ import React, {Component} from 'react';
 import {List} from "antd";
 import {connect} from "react-redux";
 
-import Item from "../list-item";
+import Item from "../task-list";
 
 const style = {
     margin: '10px'
 };
 
-class TasksListItem extends Component {
+class TaskListItem extends Component {
     getItemsByDate = () => {
         const {data, label} = this.props;
         const now = new Date();
@@ -52,4 +52,4 @@ const mapStateToProps = ({items : {data, loading}, content: {label}}) => {
 
 
 
-export default connect(mapStateToProps)(TasksListItem);
+export default connect(mapStateToProps)(TaskListItem);

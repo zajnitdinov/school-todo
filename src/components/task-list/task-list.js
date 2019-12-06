@@ -4,7 +4,7 @@ import {connect} from 'react-redux';
 
 import {siderInfo, toggleDoneItem} from "../../actions";
 
-class ListItem extends Component {
+class TaskList extends Component {
     style = {
         width: '100%',
         marginLeft: '10px'
@@ -29,4 +29,4 @@ const mapDispatchToProps = {
     toggleDone: (id) => toggleDoneItem(id)
 };
 
-export default connect(null, mapDispatchToProps)(ListItem);
+export default connect(null, mapDispatchToProps)(TaskList);
