@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73982d7f-5e3e-4014-bf59-b5e14e579ef3" name="Default Changelist" comment=".">
-      <change afterPath="$PROJECT_DIR$/src/components/app/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/month-list-tasks/month-list-tasks.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/month-list-tasks/month-list-tasks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/month-list-tasks/month-list-tasks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/tasks-content/tasks-content.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/tasks-content/tasks-content.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/tasks-list-item/tasks-list-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/tasks-list-item/tasks-list-item.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/week-list-tasks/week-list-tasks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/week-list-tasks/week-list-tasks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/week-list-tasks-items/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/week-list-tasks-items/week-list-tasks-items.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/week-task-list/week-task-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/week-task-list/week-task-list.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,10 +101,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="903" y="28" key="CommitChangelistDialog2" timestamp="1575391821331">
+    <state x="903" y="28" key="CommitChangelistDialog2" timestamp="1575637275153">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="903" y="28" key="CommitChangelistDialog2/0.0.2560.1040/2560.0.1440.860@0.0.2560.1040" timestamp="1575391821331" />
+    <state x="903" y="28" key="CommitChangelistDialog2/0.0.2560.1040/2560.0.1440.860@0.0.2560.1040" timestamp="1575637275153" />
     <state width="2538" height="326" key="GridCell.Tab.0.bottom" timestamp="1575391821459">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
