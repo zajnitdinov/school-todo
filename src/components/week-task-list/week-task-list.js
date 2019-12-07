@@ -8,18 +8,29 @@ const {WeekPicker} = DatePicker;
 class WeekTaskList extends Component {
     state = {
         data: this.props.data,
-        loading: this.props.loading
     };
 
     handleChange = (date, dateString) => {
-        console.log(date, dateString);
+        const now = new Date(date);
+        const startWeek = new Date(now.getFullYear(), now.getMonth(), now.getDate() - now.getDay());
+        const endWeek = new Date(now.getFullYear(), now.getMonth(), now.getDate() - now.getDay() + 7);
+        this.updateData(startWeek, endWeek);
+    };
+
+    updateData = (startWeek, endWeek) => {
+        const {data} = this.props;
+        const newData = data.filter(({date}) => date >= startWeek && date <= endWeek);
+        console.log(newData);
+        this.setState({
+            data: newData
+        })
     };
 
     render(){
         return (
             <React.Fragment>
                 <WeekPicker onChange={this.handleChange} disabled={this.props.loading} style={{marginLeft: '10px'}}/>
-                <WeekTaskListItem {...this.props}/>
+                <WeekTaskListItem data={this.state.data} loading={this.props.loading}/>
             </React.Fragment>
         );
     }

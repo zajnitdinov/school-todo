@@ -1,4 +1,4 @@
-import {List, Spin} from "antd";
+import {Empty, List, Spin} from "antd";
 import Item from "../task-list";
 import React from "react";
 
@@ -59,11 +59,16 @@ const WeekTaskListItem = ({data, loading}) =>{
                 <Spin size='large' />
             </div>
         )
-    } else {
+    }
+
+    if (data.length > 0) {
+        console.log(items)
         return (
             renderLists()
         )
     }
+
+    return <Empty />
 };
 
 export default WeekTaskListItem;
