@@ -6,7 +6,11 @@ import {connect} from "react-redux";
 const MonthTaskList = ({data, loading}) => {
     const dateCellRender = (item) => {
         const now = new Date(item);
-        const dataByDay = data.filter(el => el.date.getDate() === now.getDate() && el.date.getMonth() === now.getMonth());
+        const dataByDay = data.filter(({date}) =>
+            date.getDate() === now.getDate() &&
+            date.getMonth() === now.getMonth() &&
+            date.getFullYear() === now.getFullYear()
+        );
         return (
             <ul className="events">
                 {dataByDay.map(item => (

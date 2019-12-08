@@ -2,41 +2,51 @@ import React, {Component} from 'react';
 import {DatePicker} from "antd";
 import {connect} from "react-redux";
 import WeekTaskListItem from "../week-task-list-item";
+import locale from 'antd/es/date-picker/locale/ru_RU';
+import moment from "moment";
+import 'moment/locale/ru';
 
 const {WeekPicker} = DatePicker;
 
 class WeekTaskList extends Component {
     state = {
-        data: this.props.data,
+        data: [],
     };
 
-    handleChange = (date, dateString) => {
-        const now = new Date(date);
-        const startWeek = new Date(now.getFullYear(), now.getMonth(), now.getDate() - now.getDay());
-        const endWeek = new Date(now.getFullYear(), now.getMonth(), now.getDate() - now.getDay() + 7);
-        this.updateData(startWeek, endWeek);
+    componentDidMount() {
+        this.updateData(moment([]));
     };
 
-    updateData = (startWeek, endWeek) => {
+    updateData = (selectedDate) => {
         const {data} = this.props;
-        const newData = data.filter(({date}) => date >= startWeek && date <= endWeek);
-        console.log(newData);
+        const newData = data.filter(({date}) =>
+            moment(date) >= moment(selectedDate).startOf('week')
+            && moment(date) <= moment(selectedDate).endOf('week'));
+
         this.setState({
-            data: newData
-        })
+            data: newData,
+        });
     };
 
-    render(){
+    render() {
+        const {data} = this.state;
+        const {loading} = this.props;
         return (
             <React.Fragment>
-                <WeekPicker onChange={this.handleChange} disabled={this.props.loading} style={{marginLeft: '10px'}}/>
-                <WeekTaskListItem data={this.state.data} loading={this.props.loading}/>
+                <WeekPicker locale={locale}
+                            defaultValue={moment([])}
+                            onChange={this.updateData}
+                            disabled={loading}
+                            format={'W-я неделя'}
+                            style={{marginLeft: '10px'}}/>
+                <WeekTaskListItem data={data}
+                                  loading={loading}/>
             </React.Fragment>
         );
     }
 }
 
-const mapStateToProps = ({items: {data, loading} }) => {
+const mapStateToProps = ({items: {data, loading}}) => {
     return {
         data, loading
     }

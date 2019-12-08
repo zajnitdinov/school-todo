@@ -24,9 +24,7 @@ const WeekTaskListItem = ({data, loading}) =>{
         }
     };
 
-    const getItemWeekday = (data, day) => {
-        return data.filter(item => item.date.getDay() === day);
-    };
+    const getItemWeekday = (data, day) => data.filter(item => item.date.getDay() === day);
 
     const items = [
         {
@@ -62,7 +60,6 @@ const WeekTaskListItem = ({data, loading}) =>{
     }
 
     if (data.length > 0) {
-        console.log(items)
         return (
             renderLists()
         )

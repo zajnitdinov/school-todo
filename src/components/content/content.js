@@ -2,11 +2,13 @@ import React, {Component} from 'react';
 import TasksListItem from "../task-list-item/task-list-item";
 import {Typography} from "antd";
 import {connect} from "react-redux";
+
 import WeekListTasks from "../week-task-list/week-task-list";
+import MonthListTasks from "../month-task-list";
+
 import compose from "../../utils/compose";
 import withService from "../hoc/with-service";
 import {fetchItems} from "../../actions";
-import MonthListTasks from "../month-task-list";
 
 const {Title} = Typography;
 
