@@ -38,4 +38,10 @@ const fetchItems = (service, dispatch) => () => {
         .then(data => dispatch(itemsLoaded(data)));
 };
 
-export {fetchItems, toggleDoneItem, siderInfo, editLabel};
+const changeAdminAccess = () => {
+    return {
+        type: 'CHANGE_ADMIN_ACCESS'
+    }
+};
+
+export {fetchItems, toggleDoneItem, siderInfo, editLabel, changeAdminAccess};

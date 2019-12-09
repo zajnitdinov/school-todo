@@ -3,6 +3,7 @@ import {List} from "antd";
 import {connect} from "react-redux";
 
 import Item from "../task-list";
+import AddNewItem from "../../admin/add-new-item";
 
 const style = {
     margin: '10px'
@@ -23,30 +24,46 @@ class TaskListItem extends Component {
             case 'Завтра':
                 now.setDate(now.getDate() + 1);
                 return data.filter(item => equalDate(item, now));
+            case 'Все задачи':
+                return data;
             default:
                 return data;
         }
     };
+
+    renderInput = () => {
+        if (this.props.admin) {
+            return <AddNewItem/>
+        }
+    };
+
     render() {
         const {loading} = this.props;
         return (
-            <List
-                bordered='true'
-                size='large'
-                style={style}
-                loading={loading}
-                dataSource={this.getItemsByDate()}
-                renderItem=
-                    {(item) => <Item {...item}/>}
-            >
-            </List>
+            <div>
+                <List
+                    bordered='true'
+                    size='large'
+                    style={style}
+                    loading={loading}
+                    dataSource={this.getItemsByDate()}
+                    renderItem=
+                        {(item) => <Item {...item}/>}
+                >
+                </List>
+                {this.renderInput()}
+            </div>
         );
     }
 }
 
-const mapStateToProps = ({items : {data, loading}, content: {label}}) => {
+const mapStateToProps = ({
+    items : {data, loading},
+    content: {label},
+    admin
+}) => {
     return {
-        label, data, loading
+        label, data, loading, admin
     }
 };
 

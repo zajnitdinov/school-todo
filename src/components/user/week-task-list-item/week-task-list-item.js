@@ -1,5 +1,5 @@
 import {Empty, List, Spin} from "antd";
-import Item from "../task-list";
+import Item from "../../common/task-list";
 import React from "react";
 
 const WeekTaskListItem = ({data, loading}) =>{

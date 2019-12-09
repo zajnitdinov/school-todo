@@ -3,9 +3,9 @@ import {Layout} from "antd";
 import {connect} from "react-redux";
 import "antd/dist/antd.css";
 
-import LeftMenu from "../menu";
-import Info from "../info";
-import TasksContent from "../content";
+import Menu from "../common/menu";
+import Info from "../common/info";
+import TasksContent from "../user/content";
 
 const {Sider, Content: AntContent} = Layout;
 
@@ -13,9 +13,9 @@ const App = () => {
     return(
         <Layout style={{height: '100vh'}}>
             <Sider theme='light'>
-                <LeftMenu/>
+                <Menu/>
             </Sider>
-            <AntContent className='spinner'>
+            <AntContent style={{position: 'relative'}}>
                 <TasksContent/>
             </AntContent>
             <Info/>

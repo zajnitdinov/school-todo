@@ -1,5 +1,5 @@
 import React from 'react';
-import {ServiceConsumer} from "../service-context";
+import {ServiceConsumer} from "../user/service-context";
 
 const withService = () => (Wrapped) => {
     return (props) => {

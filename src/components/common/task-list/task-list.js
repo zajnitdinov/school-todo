@@ -2,13 +2,15 @@ import React, {Component} from 'react';
 import {List, Checkbox} from "antd";
 import {connect} from 'react-redux';
 
-import {siderInfo, toggleDoneItem} from "../../actions";
+import {siderInfo, toggleDoneItem} from "../../../actions";
 
 class TaskList extends Component {
     style = {
         width: '100%',
         marginLeft: '10px'
     };
+
+
 
     render() {
         const {checked, toggleDone, openInfo, id, title} = this.props;
@@ -29,4 +31,8 @@ const mapDispatchToProps = {
     toggleDone: (id) => toggleDoneItem(id)
 };
 
-export default connect(null, mapDispatchToProps)(TaskList);
+const mapStateToProps = ({admin}) => {
+    return {admin}
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(TaskList);
