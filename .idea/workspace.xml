@@ -2,37 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73982d7f-5e3e-4014-bf59-b5e14e579ef3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/admin/add-new-item/add-new-item.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/admin/add-new-item/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/content/content.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/user/content/content.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/content/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/user/content/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/hoc/with-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hoc/with-service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/info/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/info/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/info/info.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/info/info.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/menu/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/menu/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/menu/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/menu/menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/month-task-list/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/user/month-task-list/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/month-task-list/month-task-list.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/user/month-task-list/month-task-list.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/month-task-list/month-task-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/user/month-task-list/month-task-list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/service-context/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/user/service-context/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/service-context/service-context.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/user/service-context/service-context.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/task-list-item/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/task-list-item/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/task-list-item/task-list-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/task-list-item/task-list-item.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/task-list/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/task-list/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/task-list/task-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/task-list/task-list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/week-list-tasks/week-list-tasks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/user/week-list-tasks/week-list-tasks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/week-task-list-item/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/user/week-task-list-item/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/week-task-list-item/week-task-list-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/user/week-task-list-item/week-task-list-item.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/week-task-list/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/user/week-task-list/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/week-task-list/week-task-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/user/week-task-list/week-task-list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/service.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,8 +52,9 @@
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="npm" />
-      <command value="npm run start" />
       <command value="npm i react-router" />
+      <command value="npm run start" />
+      <command value="npm i -g json-server" />
     </option>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -127,6 +102,7 @@
       <workItem from="1575274989336" duration="392000" />
       <workItem from="1575277524259" duration="6361000" />
       <workItem from="1575729542131" duration="2701000" />
+      <workItem from="1575976923767" duration="5487000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1575637288969</created>
@@ -142,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575637297977</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary=".">
+      <created>1575913911969</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1575913911970</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,26 +149,26 @@
     <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="903" y="28" key="CommitChangelistDialog2" timestamp="1575637297112">
+    <state x="903" y="28" key="CommitChangelistDialog2" timestamp="1575913909817">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="903" y="28" key="CommitChangelistDialog2/0.0.2560.1040/2560.0.1440.860@0.0.2560.1040" timestamp="1575637297112" />
-    <state width="1269" height="261" key="GridCell.Tab.0.bottom" timestamp="1575729566824">
+    <state x="903" y="28" key="CommitChangelistDialog2/0.0.2560.1040/2560.0.1440.860@0.0.2560.1040" timestamp="1575913909817" />
+    <state width="2516" height="231" key="GridCell.Tab.0.bottom" timestamp="1575977091189">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="1269" height="261" key="GridCell.Tab.0.bottom/0.0.2560.1040/2560.0.1440.860@0.0.2560.1040" timestamp="1575729566824" />
-    <state width="1269" height="261" key="GridCell.Tab.0.center" timestamp="1575729566824">
+    <state width="2516" height="231" key="GridCell.Tab.0.bottom/0.0.2560.1040/2560.0.1440.860@0.0.2560.1040" timestamp="1575977091189" />
+    <state width="2516" height="231" key="GridCell.Tab.0.center" timestamp="1575977091189">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="1269" height="261" key="GridCell.Tab.0.center/0.0.2560.1040/2560.0.1440.860@0.0.2560.1040" timestamp="1575729566824" />
-    <state width="1269" height="261" key="GridCell.Tab.0.left" timestamp="1575729566824">
+    <state width="2516" height="231" key="GridCell.Tab.0.center/0.0.2560.1040/2560.0.1440.860@0.0.2560.1040" timestamp="1575977091189" />
+    <state width="2516" height="231" key="GridCell.Tab.0.left" timestamp="1575977091173">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="1269" height="261" key="GridCell.Tab.0.left/0.0.2560.1040/2560.0.1440.860@0.0.2560.1040" timestamp="1575729566824" />
-    <state width="1269" height="261" key="GridCell.Tab.0.right" timestamp="1575729566824">
+    <state width="2516" height="231" key="GridCell.Tab.0.left/0.0.2560.1040/2560.0.1440.860@0.0.2560.1040" timestamp="1575977091173" />
+    <state width="2516" height="231" key="GridCell.Tab.0.right" timestamp="1575977091189">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="1269" height="261" key="GridCell.Tab.0.right/0.0.2560.1040/2560.0.1440.860@0.0.2560.1040" timestamp="1575729566824" />
+    <state width="2516" height="231" key="GridCell.Tab.0.right/0.0.2560.1040/2560.0.1440.860@0.0.2560.1040" timestamp="1575977091189" />
     <state width="2538" height="326" key="GridCell.Tab.1.bottom" timestamp="1575391821459">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
@@ -246,14 +229,14 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="872" y="268" key="Vcs.Push.Dialog.v2/0.0.2560.1040/2560.0.1440.860@0.0.2560.1040" timestamp="1575637301962" />
-    <state x="1087" y="431" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1575907918191">
+    <state x="1087" y="431" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1575995218500">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="1087" y="431" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1040/2560.0.1440.860@0.0.2560.1040" timestamp="1575907918191" />
-    <state x="936" y="240" width="672" height="677" key="run.anything.popup" timestamp="1575907082540">
+    <state x="1087" y="431" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1040/2560.0.1440.860@0.0.2560.1040" timestamp="1575995218500" />
+    <state x="936" y="240" width="672" height="677" key="run.anything.popup" timestamp="1575977081373">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="936" y="240" width="672" height="677" key="run.anything.popup/0.0.2560.1040/2560.0.1440.860@0.0.2560.1040" timestamp="1575907082540" />
+    <state x="936" y="240" width="672" height="677" key="run.anything.popup/0.0.2560.1040/2560.0.1440.860@0.0.2560.1040" timestamp="1575977081373" />
     <state x="943" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1575910264494">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>

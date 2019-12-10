@@ -34,7 +34,7 @@ const toggleDoneItem = id => {
 
 const fetchItems = (service, dispatch) => () => {
     dispatch(itemsRequested());
-    service.getItems()
+    service.getAllItems()
         .then(data => dispatch(itemsLoaded(data)));
 };
 
