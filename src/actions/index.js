@@ -1,3 +1,5 @@
+import service from "../services/service";
+
 const editLabel = (label) => {
     return {
         type: 'EDIT_LABEL',
@@ -38,10 +40,14 @@ const fetchItems = (service, dispatch) => () => {
         .then(data => dispatch(itemsLoaded(data)));
 };
 
+const addItem = item => {
+    service.addItem(item);
+};
+
 const changeAdminAccess = () => {
     return {
         type: 'CHANGE_ADMIN_ACCESS'
     }
 };
 
-export {fetchItems, toggleDoneItem, siderInfo, editLabel, changeAdminAccess};
+export {addItem, fetchItems, toggleDoneItem, siderInfo, editLabel, changeAdminAccess};

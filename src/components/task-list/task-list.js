@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {List, Checkbox} from "antd";
 import {connect} from 'react-redux';
 
-import {siderInfo, toggleDoneItem} from "../../../actions";
+import {siderInfo, toggleDoneItem} from "../../actions";
 
 class TaskList extends Component {
     style = {

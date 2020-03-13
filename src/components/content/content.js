@@ -1,14 +1,14 @@
 import React, {Component} from 'react';
-import TasksListItem from "../../common/task-list-item/task-list-item";
+import TasksListItem from "../task-list-item/task-list-item";
 import {Typography} from "antd";
 import {connect} from "react-redux";
 
-import WeekListTasks from "../week-task-list/week-task-list";
-import MonthListTasks from "../month-task-list";
+import WeekListTasks from "../user/week-task-list/week-task-list";
+import MonthListTasks from "../user/month-task-list";
 
-import compose from "../../../utils/compose";
-import withService from "../../hoc/with-service";
-import {fetchItems} from "../../../actions";
+import compose from "../../utils/compose";
+import withService from "../hoc/with-service";
+import {fetchItems} from "../../actions";
 
 const {Title} = Typography;
 
@@ -31,6 +31,10 @@ class Content extends Component {
                 return <WeekListTasks />;
             case 'Месяц':
                 return <MonthListTasks/>;
+            case 'Сотрудники':
+                return <div>Добавить сотрудников</div>;
+            case 'Мероприятия':
+                return <div>Добавить мероприятия</div>;
             default:
                 return <TasksListItem />;
         }

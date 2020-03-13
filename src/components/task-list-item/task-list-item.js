@@ -3,7 +3,7 @@ import {List} from "antd";
 import {connect} from "react-redux";
 
 import Item from "../task-list";
-import AddNewItem from "../../admin/add-new-item";
+import AddNewItem from "../add-new-item";
 
 const style = {
     margin: '10px'

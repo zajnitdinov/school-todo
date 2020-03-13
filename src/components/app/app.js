@@ -3,9 +3,9 @@ import {Layout} from "antd";
 import {connect} from "react-redux";
 import "antd/dist/antd.css";
 
-import Menu from "../common/menu";
-import Info from "../common/info";
-import TasksContent from "../user/content";
+import Menu from "../menu";
+import Info from "../info";
+import TasksContent from "../content";
 
 const {Sider, Content: AntContent} = Layout;
 

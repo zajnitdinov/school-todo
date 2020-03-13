@@ -7,6 +7,12 @@ const items = (state, action) => {
     }
 
     switch (action.type) {
+        case 'ADD_ITEM':
+            const newData = state.items.data.push(action.payload);
+            return {
+                loading: true,
+                data: newData
+            };
         case 'FETCH_ITEMS_SUCCESS':
             return{
                 data: action.payload,

@@ -3,7 +3,7 @@ import {Button, Menu as AntMenu} from "antd";
 import {connect} from "react-redux";
 import {Link} from "react-router-dom";
 
-import {editLabel, changeAdminAccess} from "../../../actions";
+import {editLabel, changeAdminAccess} from "../../actions";
 
 class Menu extends Component {
     componentDidUpdate(prevProps) {
@@ -17,7 +17,7 @@ class Menu extends Component {
     };
 
     render() {
-        const {admin, changeAdminAccess} = this.props;
+        const {admin, changeAdminAccess, editLabel} = this.props;
         const menuItems = admin ? ['Все задачи', 'Сотрудники', 'Мероприятия'] : ['Сегодня', 'Завтра', 'Неделя', 'Месяц'];
         const renderItems = () => menuItems.map((item, idx) => <AntMenu.Item key={idx} onClick={() => editLabel(item)}> {item} </AntMenu.Item>);
         const buttonName = admin ? 'Вернуться' : 'Панель управления'

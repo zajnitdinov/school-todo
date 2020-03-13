@@ -1,7 +1,7 @@
 import React from 'react';
 import {Drawer, Typography} from "antd";
 import {connect} from 'react-redux'
-import {siderInfo} from "../../../actions";
+import {siderInfo} from "../../actions";
 
 const {Title} = Typography;
 
